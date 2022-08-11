@@ -1,0 +1,139 @@
+:root {
+  --ff-body: 'Arimo', sans-serif;
+  --ff-title: 'Karantina', cursive;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.ff-title {
+  font-family: var(--ff-title);
+}
+
+.ff-body {
+  font-family: var(--ff-body);
+}
+
+body {
+  background: rgb(247, 222, 129);
+}
+
+.text > * {
+  margin: 2rem;
+}
+
+.text h1 {
+  font-size: 4rem;
+  color: rgb(54, 44, 11);
+  text-shadow: 4px 3px 0px rgb(235, 222, 176),
+               7px 8px 0px rgba(0,0,0,0.15);
+  letter-spacing: 0.3rem;
+}
+
+.text p {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  max-width: 70%;
+  margin-right: 3rem;
+}
+
+.app {
+  margin-right: 3rem
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  appearance: none;
+  color: rgb(25, 16, 2);
+  box-shadow: 0.2rem 0.2rem 0 rgba(161, 96, 226, 0.607);
+  background: rgba(200, 169, 230, 0.712);
+  padding: 0.4rem;
+  font-family: var(--ff-body);
+  text-align: center;
+  border-radius: 0.6rem;
+}
+
+input {
+  border: none;
+  appearance: none;
+  background: rgba(99, 70, 8, 0.174);
+  box-shadow: 0.1rem 0.1rem 0 rgba(99, 70, 8, 0.336);
+  padding: 0.4rem;
+  font-family: var(--ff-body);
+  text-align: center;
+  border-radius: 0.6rem;
+  width: 15rem;
+  outline: none;
+}
+
+input:focus {
+  box-shadow: 0.1rem 0.1rem 0 rgba(14, 0, 0, 0.237);
+}
+
+.text-input {
+  width: 100%;
+}
+
+#task {
+  max-width: 70%;
+}
+
+.task {
+  margin: 0.4rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.219);
+  box-shadow: 0.1rem 0.1rem 0 rgba(49, 49, 49, 0.443);
+  border-radius: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  width: auto;
+  max-width: 70%;
+}
+
+.task-container {
+  padding: 1rem;
+}
+
+.task-btns > * {
+  margin: 0 0.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .task {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .text {
+    max-width: 100%;
+  }
+
+  .text-input {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .text {
+    max-width: 100%;
+  }
+
+  .text-input {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .task-form {
+    display: grid;
+    align-items: center;
+  }
+
+  .task-form > * {
+    width: 70%;
+
+  }
+}

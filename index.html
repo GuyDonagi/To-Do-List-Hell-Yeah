@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- styles -->
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Karantina:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>וואו, איזו רשימה</title>
+  </head>
+  <body>
+    <div class="text">
+      <h1 class="ff-title">רשימת משימות / קניות</h1>
+      <p class="ff-body">בואו נעשה סדר בבלאגן.</p>
+      <p class="ff-body">לפניכם מערכת ניהול משימות (תראה אותך, מנהל!)
+        <br>כל מה שעליכם לעשות הוא להכניס משימה לתיבת
+        הטקסט, ולאחר מכן ללחוץ על "+".
+        <br>לאחר שתבצעו את המשימה בהצלחה, היא תוסר מהרשימה שלכם
+        ותועבר לבית הקברות למשימות.
+      </p>
+    </div>
+
+    <div id="app" class="app">
+      <form name="task submit" id="task-form" class="task-form">
+        <label for="task"></label>
+        <input id="task" name="task" autocomplete="off" placeholder="הכנס משימה...">
+        <button id="add">+</button>
+      </form>
+      <div class="task-container" id="task-container">
+        <!-- TASKS WILL EVENTUALLY SHOW UP HERE
+              BEEZRAT HASHEM -->
+      </div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
